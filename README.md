@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-    <img width="20%" src="https://github.com/buildrun-tech/buildrun-spring-security-jwt-example/blob/main/images/logo.png"> 
+    <img width="30%" src="https://github.com/buildrun-tech/buildrun-spring-security-jwt-example/blob/main/images/logo2.jpeg"> 
 </p>
 
 
