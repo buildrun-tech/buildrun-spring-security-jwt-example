@@ -1,0 +1,21 @@
+meta {
+  name: Feed
+  type: http
+  seq: 6
+}
+
+get {
+  url: http://localhost:8080/feed
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}
+
+body:json {
+  {
+    "content": "ola mundo do brno! 2"
+  }
+}

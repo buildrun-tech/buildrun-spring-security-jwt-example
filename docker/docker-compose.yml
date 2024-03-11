@@ -9,4 +9,4 @@ services:
       - MYSQL_USER=admin
       - MYSQL_PASSWORD=123
       - MYSQL_DATABASE=mydb
-      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_ROOT_PASSWORD=123

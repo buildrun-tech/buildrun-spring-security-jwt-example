@@ -1,4 +1,4 @@
-package tech.buildrun.security.domain;
+package tech.buildrun.springsecurity.entities;
 
 import jakarta.persistence.*;
 
@@ -9,24 +9,15 @@ public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "role_id")
-    private Long id;
+    private Long roleId;
     private String name;
 
-
-    public Role() {
+    public Long getRoleId() {
+        return roleId;
     }
 
-    public Role(Long id, String name) {
-        this.id = id;
-        this.name = name;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+    public void setRoleId(Long roleId) {
+        this.roleId = roleId;
     }
 
     public String getName() {
@@ -38,18 +29,18 @@ public class Role {
     }
 
     public enum Values {
+
         ADMIN(1L),
         BASIC(2L);
 
-        Long id;
+        long roleId;
 
-        Values(Long id) {
-            this.id = id;
+        Values(long roleId) {
+            this.roleId = roleId;
         }
 
-        public Role get(){
-            return new Role(this.id, this.name());
+        public long getRoleId() {
+            return roleId;
         }
     }
-
 }

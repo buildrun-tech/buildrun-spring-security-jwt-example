@@ -31,7 +31,3 @@ build/
 
 ### VS Code ###
 .vscode/
-
-
-app.key
-app.pub

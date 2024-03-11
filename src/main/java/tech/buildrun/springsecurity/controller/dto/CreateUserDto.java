@@ -1,4 +1,4 @@
-package tech.buildrun.security.controller.dto;
+package tech.buildrun.springsecurity.controller.dto;
 
 public record CreateUserDto(String username, String password) {
 }

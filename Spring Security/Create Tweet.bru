@@ -1,0 +1,21 @@
+meta {
+  name: Create Tweet
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8080/tweets
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}
+
+body:json {
+  {
+    "content": "ola mundo!"
+  }
+}

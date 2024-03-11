@@ -1,0 +1,21 @@
+meta {
+  name: Delete Tweet
+  type: http
+  seq: 5
+}
+
+delete {
+  url: http://localhost:8080/tweets
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}
+
+body:json {
+  {
+    "content": "ola mundo do admin!"
+  }
+}
